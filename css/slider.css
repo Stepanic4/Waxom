@@ -1,0 +1,248 @@
+a {
+    outline: none;
+}
+
+.img-fill {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-align: center
+}
+
+.img-fill img {
+    position: relative;
+    display: inline-block;
+    max-width: none
+}
+
+.blocks-box,
+.slick-slider {
+    margin: 0 0;
+    padding: 0 !important;
+}
+
+.slick-slide {
+    float: left /* If RTL Make This Right */;
+    padding: 0;
+}
+
+.Modern-Slider {
+    position: relative;
+}
+
+.Modern-Slider .NextArrow {
+    position: absolute;
+    top: 53%;
+    right: 150px;
+    width: 45px;
+    height: 75px;
+    background: transparent;
+    background-image: url("../media/images/arrow.png");
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    outline: none;
+    border: 0 none;
+    margin-top: -22.5px;
+    z-index: 5;
+}
+
+.Modern-Slider .PrevArrow {
+    position: absolute;
+    top: 53%;
+    left: 150px;
+    width: 45px;
+    height: 75px;
+    background: transparent;
+    background-image: url("../media/images/arrow.png");
+    background-repeat: no-repeat;
+    outline: none;
+    border: 0 none;
+    margin-top: -22.5px;
+    z-index: 5;
+}
+
+.Modern-Slider .img-fill {
+    height: 100vh;
+    background: #000;
+}
+
+.Modern-Slider .img-fill:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, .50);
+    position: absolute;
+}
+
+.Modern-Slider .img-fill .info {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    top: 40%;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+.slick-list:focus {
+    outline: none
+}
+
+.slick-list.dragging {
+    cursor: hand
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+
+.slick-track:before, .slick-track:after {
+    display: table;
+    content: ''
+}
+
+.slick-track:after {
+    clear: both
+}
+
+.slick-loading .slick-track {
+    visibility: hidden
+}
+
+.slick-slide {
+    display: none;
+    float: left /* If RTL Make This Right */;
+    height: 100%;
+    min-height: 1px
+}
+
+.slick-slide.dragging img {
+    pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+    display: block
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent
+}
+/*=======dots=====*/
+.Modern-Slider .slick-dots{
+    position:absolute;
+    height:50px;
+    bottom:0;
+    width:100%;
+    left:0;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    text-align:center;
+}
+
+.Modern-Slider .slick-dots li{
+    display:inline-block;
+    width:15px;
+    height:15px;
+    -webkit-transition:all 0.5s;
+    transition:all 0.5s;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    background-color: #939395;
+    margin:0 2.5px;
+    cursor:pointer;
+    position:relative;
+}
+
+.Modern-Slider .slick-dots li.slick-active{
+    border:2px solid #FFF;
+    background-color: transparent;
+    -webkit-box-shadow:inset 0 0 0 2px rgba(0,0,0,.28);
+    box-shadow:inset 0 0 0 2px rgba(0,0,0,.28);
+}
+
+.Modern-Slider .slick-dots li a{
+    position:absolute;
+    bottom:100%;
+    left:50%;
+    width:120px;
+    height:75px;
+    display:block;
+    visibility:hidden;
+    border:4px solid rgba(0,0,0,.50);
+    margin-left:-60px;
+    margin-bottom:15px;
+    -webkit-transition:visibility 0.5s linear 0.5s;
+    transition:visibility 0.5s linear 0.5s;
+    -webkit-animation:fadeOut 0.5s both;
+    animation:fadeOut 0.5s both;
+}
+
+.Modern-Slider .slick-dots li a:after{
+    content:'';
+    position:absolute;
+    left:50%;
+    margin-left:-8px;
+    top:100%;
+    width:0;
+    height:0;
+    border:8px solid Transparent;
+    border-top-color:rgba(0,0,0,.50);
+    margin-top:4px;
+}
+
+.Modern-Slider .slick-dots li:hover a{
+    visibility:visible;
+    -webkit-transition-delay:0s;
+    transition-delay:0s;
+    -webkit-animation:fadeIn 0.5s both;
+    animation:fadeIn 0.5s both;
+
+}
+
+.Modern-Slider .slick-dots li a img {
+    width: 100%;
+    height: 100%;
+}
