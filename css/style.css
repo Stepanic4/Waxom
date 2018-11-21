@@ -58,6 +58,7 @@ a:hover {
     color: #ffffff;
     text-decoration: none;
 }
+
 .height-100 {
     height: 100px;
 }
@@ -953,6 +954,7 @@ a:hover {
 .widget {
     max-width: 300px;
 }
+
 .img-fluid {
     display: block;
     width: 130px;
@@ -984,6 +986,7 @@ a:hover {
 .block-images .fl4 {
     background-image: url("../media/images/f4.png");
 }
+
 /*======================end contact==============*/
 /*================footer===================*/
 footer {
@@ -999,6 +1002,7 @@ footer {
 footer .name {
     color: #959595;;
 }
+
 footer .only {
     color: #959595;;
 }
@@ -1006,6 +1010,7 @@ footer .only {
 footer .faq {
     color: #c7b299;;
 }
+
 /****************************************Media Queryes******************************/
 @media (max-width: 1300px) {
     .wrapper {
@@ -1013,6 +1018,7 @@ footer .faq {
         padding-right: 20px;
     }
 }
+
 @media (max-width: 991px) {
     .d-lg-text-center {
         justify-content: center !important;
