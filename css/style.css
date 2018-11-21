@@ -758,6 +758,14 @@ li {
 
 
 /****************************************Media Queryes******************************/
+@media (max-width: 768px) {
+    .d-md-max-width-300 {
+        max-width: 300px;
+    }
+    .block-button .btn-wax {
+        width: 200px;
+    }
+}
 @media (max-width: 576px) {
     .Modern-Slider .img-fill .info {
         top: 35%;
@@ -777,4 +785,5 @@ li {
     .mb-sm-10 {
         margin-bottom: 10px !important;
     }
+
 }
