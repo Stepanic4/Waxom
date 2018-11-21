@@ -756,3 +756,21 @@ li {
     left: 115px;
 }
 
+
+/****************************************Media Queryes******************************/
+@media (max-width: 576px) {
+    .pb-sm-10 {
+        padding-bottom: 10px !important;
+    }
+    .pb-sm-0 {
+        padding-bottom: 0 !important;
+    }
+
+    .mb-sm-0 {
+        margin-bottom: 0 !important;
+    }
+
+    .mb-sm-10 {
+        margin-bottom: 10px !important;
+    }
+}
