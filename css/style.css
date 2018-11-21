@@ -759,6 +759,10 @@ li {
 
 /****************************************Media Queryes******************************/
 @media (max-width: 576px) {
+    .Modern-Slider .img-fill .info {
+        top: 35%;
+    }
+
     .pb-sm-10 {
         padding-bottom: 10px !important;
     }
