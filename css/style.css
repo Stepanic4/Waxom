@@ -1037,6 +1037,11 @@ footer .faq {
     .block-button .btn-wax {
         width: 200px;
     }
+
+    .excellent {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 576px) {
