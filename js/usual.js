@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
-    // Slider Options
+
     $(".Modern-Slider").slick({
         autoplay: false,
         autoplaySpeed: 7000,
@@ -24,7 +24,7 @@ $(document).ready(function () {
         },
     });
 
-    // Arrows Thumbnails Trick
+
     const PrevThumbinalFirst = $(".Modern-Slider .item:last-child").children(".img-fill").children("img").attr("src");
     $(".Modern-Slider .PrevArrow .Thumbnail").css({"background-image": "url(" + PrevThumbinalFirst + ")"});
     const NextThumbinalFirst = $(".Modern-Slider .item:first-child").next().children(".img-fill").children("img").attr("src");
@@ -42,7 +42,7 @@ $(document).ready(function () {
 $(".menu-collapsed").click(function () {
     $(this).toggleClass("menu-expanded");
 });
-/* Smooth Scroll */
+
 $(function () {
     $('a[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -57,8 +57,7 @@ $(function () {
         }
     });
 });
-/* End Smooth Scroll */
-/* Scroll to Top Button */
+
 $(function () {
     $(window).on('scroll', function () {
         if ($(window).scrollTop() >= 30) {
@@ -68,8 +67,7 @@ $(function () {
         }
     });
 });
-/* End Scroll to Top Button */
-/* Fixed Nav */
+
 $(function () {
     $(window).on('scroll', function () {
         if ($(window).scrollTop() >= 100) {
@@ -79,8 +77,7 @@ $(function () {
         }
     });
 });
-/* End Fixed Nav */
-/* Nav Fade In/Out */
+
 $(function () {
     $(window).on('scroll', function () {
         if ($(window).scrollTop() >= 10) {
@@ -90,4 +87,3 @@ $(function () {
         }
     });
 });
-/* End Nav Fade In/Out */
