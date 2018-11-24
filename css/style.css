@@ -790,6 +790,12 @@ a:hover {
         background-color: rgba(255, 255, 255, 0.95);
     }
 
+    .bar-logo {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+        padding-bottom: 5px;
+        font-size: 1.7em;
+    }
+
     .menu-collapsed {
         transition: all .25s;
         position: fixed;
@@ -1320,6 +1326,12 @@ footer .faq {
     }
 }
 
+@media (max-width: 1024px) {
+    .d-pod-pt-10 {
+        padding-top: 10px !important;
+    }
+}
+
 @media (max-width: 991px) {
     .d-lg-text-center {
         justify-content: center !important;
@@ -1381,4 +1393,30 @@ footer .faq {
         padding-right: 10px;
     }
 
+    .menu-expanded a {
+        font-size: 1.5em;
+        padding: 5px;
+    }
+
+    .menu-expanded {
+        line-height: 40px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .menu-expanded {
+        line-height: 30px;
+    }
+
+    .bar-logo {
+        font-size: 1.5em;
+        margin-bottom: 5px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .Modern-Slider .img-fill .info {
+        top: 20%;
+    }
 }
