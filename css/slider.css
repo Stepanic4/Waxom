@@ -10,12 +10,6 @@ a {
     text-align: center
 }
 
-.img-fill img {
-    position: relative;
-    display: inline-block;
-    max-width: none
-}
-
 .blocks-box,
 .slick-slider {
     margin: 0 0;

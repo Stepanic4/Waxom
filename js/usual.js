@@ -4,8 +4,8 @@ $(document).ready(function () {
 
 
     $(".Modern-Slider").slick({
-        autoplay: false,
-        autoplaySpeed: 7000,
+        autoplay: true,
+        autoplaySpeed: 12000,
         speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -22,18 +22,6 @@ $(document).ready(function () {
             const thumbnail = $(slider.$slides[i]).data('thumbnail');
             return '<a href="#"><img src="' + thumbnail + '"></a>';
         },
-    });
-
-
-    const PrevThumbinalFirst = $(".Modern-Slider .item:last-child").children(".img-fill").children("img").attr("src");
-    $(".Modern-Slider .PrevArrow .Thumbnail").css({"background-image": "url(" + PrevThumbinalFirst + ")"});
-    const NextThumbinalFirst = $(".Modern-Slider .item:first-child").next().children(".img-fill").children("img").attr("src");
-    $(".Modern-Slider .NextArrow .Thumbnail").css({"background-image": "url(" + NextThumbinalFirst + ")"});
-    $(".Modern-Slider").on('afterChange', function (event, slick, currentSlide) {
-        const PrevThumbinal = $(".Modern-Slider .item.slick-active").prev(".item").children(".img-fill").children("img").attr("src");
-        $(".Modern-Slider .PrevArrow .Thumbnail").css({"background-image": "url(" + PrevThumbinal + ")"});
-        const NextThumbinal = $(".Modern-Slider .item.slick-active").next(".item").children(".img-fill").children("img").attr("src");
-        $(".Modern-Slider .NextArrow .Thumbnail").css({"background-image": "url(" + NextThumbinal + ")"})
     });
 
 });
