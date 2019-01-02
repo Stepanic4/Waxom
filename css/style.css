@@ -645,6 +645,66 @@ a:hover {
     font-size: 35px;
 }
 
+/*********anime-logo*******/
+.ani-logo img {
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 7s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 7s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotateY(360deg);
+        -moz-transform:rotateY(360deg);
+        -o-transform:rotateY(360deg);
+        transform:rotateY(360deg);}
+}
+@-moz-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotateY(360deg);
+        -moz-transform:rotateY(360deg);
+        -o-transform:rotateY(360deg);
+        transform:rotateY(360deg);}
+}
+@-o-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotateY(360deg);
+        -moz-transform:rotateY(360deg);
+        -o-transform:rotateY(360deg);
+        transform:rotateY(360deg);}
+}
+@keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotateY(360deg);
+        -moz-transform:rotateY(360deg);
+        -o-transform:rotateY(360deg);
+        transform:rotateY(360deg);}
+}
+/*********end anime*******/
 .nav ul {
     width: 80%;
 }
