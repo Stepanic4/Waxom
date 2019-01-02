@@ -1,4 +1,4 @@
-//****Created by Zolotukhin 17.11.18****
+//****Created by Zolotukhin 2.01.19****
 
 $(document).ready(function () {
 
@@ -20,7 +20,7 @@ $(document).ready(function () {
         // Custom Dots With Thumbnails Tool Tip
         customPaging: function (slider, i) {
             const thumbnail = $(slider.$slides[i]).data('thumbnail');
-            return '<a href="javascript:void(0)"><img src="' + thumbnail + '"></a>';
+            return '<a href="#"><img src="' + thumbnail + '"></a>';
         },
     });
 
@@ -52,7 +52,7 @@ $(function () {
                 $('html, body').animate({
                     scrollTop: target.offset().top
                 }, 1000);
-                return false;
+                return true;
             }
         }
     });
